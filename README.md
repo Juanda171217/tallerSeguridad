@@ -38,10 +38,7 @@ java -cp target/classes;target/dependency/* edu.escuelaing.arep.HelloWorld
 
 
 ## Tree 
-
-│   pom.xml
-│   README.md
-│   
+  
 ├───.vscode
 │       settings.json
 │
