@@ -1,6 +1,4 @@
-# Titulo
-
-Taller Seguridad
+# Taller Seguridad
 
 ## Descripción
 
@@ -39,31 +37,7 @@ java -cp target/classes;target/dependency/* edu.escuelaing.arep.HelloWorld
 
 ## Tree 
   
-├───.vscode
-│       settings.json
-│
-├───certificados
-│       awskeystore.p12
-│       awskeystore2.p12
-│       ecikeystore.p12
-│       myTrustStore.p12
-│
-├───src
-│   ├───main
-│   │   └───java
-│   │       └───edu
-│   │           └───escuelaing
-│   │               └───arep
-│   │                       HelloWorld.java
-│   │                       URLReader.java
-│   │
-│   └───test
-│       └───java
-│           └───edu
-│               └───escuelaing
-│                   └───arep
-│                           AppTest.java
-
+[![awsj.png](https://i.postimg.cc/26xvp06G/awsj.png)](https://postimg.cc/tZY7WtFn)
 
 
 ## Documentación
