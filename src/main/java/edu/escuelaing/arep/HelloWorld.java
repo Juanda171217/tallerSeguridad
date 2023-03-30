@@ -1,6 +1,7 @@
 package edu.escuelaing.arep;
 
 import static spark.Spark.*;
+import static edu.escuelaing.arep.URLReader.*;
 
 public class HelloWorld {
     public static void main(String[] args) {
@@ -8,7 +9,8 @@ public class HelloWorld {
         // truststorePassword);
         secure(getKeyStore(), getPdwKeyStore(), null, null);
         port(getPort());
-        get("/hello", (req, res) -> "Hello Heroku");
+        get("/hello", (req, res) -> "Hello World");
+        get("remote", (req, res) -> readURL(getLink()));
     }
 
     static int getPort() {
@@ -30,5 +32,12 @@ public class HelloWorld {
             return System.getenv("KEYSTOREPDW");
         }
         return "123456";
+    }
+
+    static String getLink() {
+        if (System.getenv("LINK") != null) {
+            return System.getenv("LINK");
+        }
+        return "https://ec2-3-83-80-54.compute-1.amazonaws.com:5000/hello";
     }
 }
